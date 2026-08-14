@@ -86,30 +86,27 @@ body {
     padding-right: clamp(1rem, 2vw, 2.5rem);
 }
 
-.button-group {
+.link-group {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 1.6rem;
 }
 
-.button-group > button {
-    margin-bottom: 1.6rem;
+.link-group > a {
     padding: 1.2rem;
     width: 100%;
     background-color: var(--color-grey-700);
     color: var(--color-white);
     border: 0;
     border-radius: 0.8rem;
-    transition: 0.5s;
+    text-decoration: none;
 }
 
-.button-group > button:hover {
+.link-group > a:hover {
+    transition: 0.5s;
     background-color: var(--color-green);
     color: var(--color-grey-700);
-}
-
-.button-group > button:nth-child(5) {
-    margin-bottom: 0rem;
 }
 
 footer { 
