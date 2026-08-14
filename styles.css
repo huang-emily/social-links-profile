@@ -75,7 +75,7 @@ body {
     margin-bottom: 0.4rem;
 }
 
-.header-group h3 {
+.header-group p {
     color: var(--color-green);
 }
 
@@ -101,10 +101,10 @@ body {
     border: 0;
     border-radius: 0.8rem;
     text-decoration: none;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .link-group > a:hover {
-    transition: 0.5s;
     background-color: var(--color-green);
     color: var(--color-grey-700);
 }

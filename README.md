@@ -67,7 +67,21 @@ Additionally, I learned about ```:nth-child()``` when overriding one of the ```m
 }
 ```
 
-With this, I didn't need to re-write ```margin-bottom: 1.6rem;``` four times. I also learned about ```:hover```, but it wasn't as complicated to learn compared to the ```clamp()```.
+With this, I didn't need to re-write ```margin-bottom: 1.6rem;``` four times. I also learned about ```:hover```, but it wasn't as complicated to learn compared to the ```clamp()```. All I need to do was add the ```:hover``` to the links.
+
+```css
+.link-group > a {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.link-group > a:hover {
+    background-color: var(--color-green);
+    color: var(--color-grey-700);
+}
+```
+
+This was something I already had exposure to, so this wasn't too difficult to complete thankfully!
+
 
 I also learned a bit more about ```justify-content``` vs. ```align-items``` where the prior helps with horizontal movement and the later helps with vertical movement. Obviously, this is a rather simplified version of what they actually do, but it's helped me understand what I need for a specific use case which is centering one singular container on a page.
 
